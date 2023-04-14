@@ -1,0 +1,43 @@
+
+
+
+button.sign-in {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+
+  text-align: right;
+
+  /* Secondary */
+
+  color: #666666;
+  text-decoration: none;
+  transition: 0.5s;
+}
+button.sign-in:hover,
+button.sign-in:focus,
+button.sign-in:active {
+  color: #ed7135;
+  transition: 0.5s;
+}
+.btn.btn-link.show-more{
+  display: flex;
+  font-family: 'Commissioner';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+/* identical to box height, or 24px */
+
+padding-left: 0;
+/* Dark */
+
+color: #292929;
+transition: 0.5s;
+}
+.btn.btn-link.show-more:hover,
+.btn.btn-link.show-more:focus,
+.btn.btn-link.show-more:active {
+  color: #ed7135;
+  transition: 0.5s;
+}

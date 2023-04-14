@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html class="" lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <title>grisha paramonov</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="format-detection" content="telephone=no" />
+    <link rel="shortcut icon" href="image/favicon_w.png" type="image/png" />
+    <link href="scss/base/main.css" rel="stylesheet" media="screen" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https: //fonts.googleapis.com/css2?family= семья = Комиссар: вес @ 100; 200; 300; 400; 500; 600; 700; 800; 900 & display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" title="theme" href="#" />
+
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500;700;800&display=swap" rel="stylesheet"> -->
+  </head>
+  <body class="body">
+    <header class="page-header header" role="banner">
+      <div class="header__inner">
+        <div class="container">
+          <div
+            class="row align-items-center justify-content-md-end d-flex h-100"
+          >
+            <div class="col-4 d-none d-md-block">
+              <nav class="navbar header__navbar">
+                <div class="container-fluid">
+                  <div class="navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#"
+                          >Photos</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Videos</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Podcasts</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            </div>
+            <div class="col-6 col-xl-3 col-md-5 col-sm-5">
+              <div class="search">
+                <form class="d-flex search__form">
+                  <input
+                    class="form-control me-2"
+                    type="d-flex"
+                    placeholder="Search"
+                    aria-label="Search"
+                  />
+                  <button class="btn btn-outline-success d-none" type="submit">
+                    Search
+                  </button>
+                </form>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-7 col-6">
+              <div class="wrapper">
+                <div class="nav-item dropdown header__language language-select">
+                  <a
+                    class="nav-link language-select__link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    English
+                  </a>
+                  <ul class="dropdown-menu language-select__menu">
+                    <li>
+                      <a class="dropdown-item language-select__item" href="#"
+                        >English2</a
+                      >
+                    </li>
+                    <li><a class="dropdown-item" href="#">English3</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item" href="#">English4</a></li>
+                  </ul>
+                </div>
+                <button type="button" class="btn btn-link sign-in">
+                  Sign in
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main" role="main" style="overflow: hidden">
+      <div class="container">
+        <div class="page-card page-block">
+          <div class="row">
+            <div class="col-12 col-lg-3">
+              <div class="d-flex w-100 align-items-center">
+                <div
+                  class="nav w-100 flex-column nav-pills"
+                  id="v-pills-tab"
+                  role="tablist"
+                  aria-orientation="vertical"
+                >
+                  <button
+                    class="nav-link active d-flex"
+                    id="v-pills-all-photos-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-all-photos"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-all-photos"
+                    aria-selected="true"
+                  >
+                    <div class="icon">
+                      <svg height="24" width="24">
+                        <use xlink:href="#icon3"></use>
+                      </svg>
+                    </div>
+                    All photos
+                  </button>
+                  <button
+                    class="nav-link d-flex stroke"
+                    id="v-pills-selfies-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-selfies"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-selfies"
+                    aria-selected="false"
+                  >
+                    <div class="icon">
+                      <svg height="24" width="24">
+                        <use xlink:href="#icon1"></use>
+                      </svg>
+                    </div>
+                    Selfies
+                  </button>
+                  <button
+                    class="nav-link d-flex stroke"
+                    id="v-pills-recent-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-recent"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-recent"
+                    aria-selected="false"
+                  >
+                    <div class="icon">
+                      <svg height="24" width="24">
+                        <use xlink:href="#time"></use>
+                      </svg>
+                    </div>
+                    Recent
+                  </button>
+                  <button
+                    class="nav-link d-flex"
+                    id="v-pills-deleted-tab"
+                    data-bs-toggle="pill"
+                    data-bs-target="#v-pills-deleted"
+                    type="button"
+                    role="tab"
+                    aria-controls="v-pills-deleted"
+                    aria-selected="false"
+                  >
+                    <div class="icon">
+                      <svg height="24" width="24">
+                        <use xlink:href="#icon2"></use>
+                      </svg>
+                    </div>
+                    Deleted
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 col-lg-9">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="v-pills-all-photos"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-all-photos-tab"
+                >
+                  <div class="row">
+                    <div class="col">
+                      <div class="row">
+                        <div class="col-12 col-md-9 mb-2 mt-2 mt-sm-0 mb-sm-0">
+                          <div class="title-block mb-3 ms-3">
+                            <h1 class="main-title">All photos</h1>
+                            <div class="subtitle">150 items</div>
+                          </div>
+                        </div>
+                        <div
+                          class="col-3 d-flex align-items-center mb-3 mt-2 mt-lg-0 mb-lg-0 ms-2 ms-lg-0"
+                        >
+                          <div class="switch-block">
+                            <input
+                              type="radio"
+                              class="btn-check"
+                              name="options"
+                              id="option1"
+                              checked
+                            />
+                            <label class="btn btn-secondary" for="option1"
+                              >Выбранная</label
+                            >
+
+                            <input
+                              type="radio"
+                              class="btn-check"
+                              name="options"
+                              id="option2"
+                            />
+                            <label class="btn btn-secondary" for="option2"
+                              >Радио</label
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <div class="block-list">
+                        <div class="container">
+                          <div class="row row-cols-4 gx-4 gy-4">
+                            <div class="col-12 col-md-6">
+                              <div class="card card-main">
+                                <img
+                                  src="/img/thumbnail.jpg"
+                                  class="card-img-top"
+                                  alt="..."
+                                />
+                                <div class="card-body">
+                                  <h5 class="card-title">Название карточки</h5>
+                                  <div class="card-accardeon">
+                                    <p class="card-text">
+                                      Some quick example text to build on the
+                                      card title and make up the bulk of the
+                                      card's content. 
+                                    </p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <a href="#" class="btn btn-primary"
+                                      >Save to collection</a
+                                    >
+                                    <a href="#" class="btn btn-primary"
+                                      >Share</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <div class="card card-main">
+                                <img
+                                  src="/img/thumbnail.jpg"
+                                  class="card-img-top"
+                                  alt="..."
+                                />
+                                <div class="card-body">
+                                  <h5 class="card-title">Название карточки</h5>
+                                  <div class="card-accardeon">
+                                    <p class="card-text">
+                                      Some quick example text to build on the
+                                      card title and make up the bulk of the
+                                      card's content. Some quick example text to
+                                      build on the card title and make up the
+                                      bulk of the card's content. Some quick
+                                      example text to build on the card title
+                                      and make up the bulk of the card's
+                                      content. Some quick example text to build
+                                      on the card title and make up the bulk of
+                                      the card's content.
+                                    </p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <a href="#" class="btn btn-primary"
+                                      >Save to collection</a
+                                    >
+                                    <a href="#" class="btn btn-primary"
+                                      >Share</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <div class="card card-main">
+                                <img
+                                  src="/img/thumbnail.jpg"
+                                  class="card-img-top"
+                                  alt="..."
+                                />
+                                <div class="card-body">
+                                  <h5 class="card-title">Название карточки</h5>
+                                  <div class="card-accardeon">
+                                    <p class="card-text">
+                                      Some quick example text to build on the
+                                      card title and make up the bulk of the
+                                      card's content. Some quick example text to
+                                      build on the card title and make up the
+                                      bulk of the card's content. Some quick
+                                      example text to build on the card title
+                                      and make up the bulk of the card's
+                                      content. Some quick example text to build
+                                      on the card title and make up the bulk of
+                                      the card's content.
+                                    </p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <a href="#" class="btn btn-primary"
+                                      >Save to collection</a
+                                    >
+                                    <a href="#" class="btn btn-primary"
+                                      >Share</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <div class="card card-main">
+                                <img
+                                  src="/img/thumbnail.jpg"
+                                  class="card-img-top"
+                                  alt="..."
+                                />
+                                <div class="card-body">
+                                  <h5 class="card-title">Название карточки</h5>
+                                  <div class="card-accardeon">
+                                    <p class="card-text">
+                                      Some quick example text to build on the
+                                      card title and make up the bulk of the
+                                      card's content. Some quick example text to
+                                      build on the card title and make up the
+                                      bulk of the card's content. Some quick
+                                      example text to build on the card title
+                                      and make up the bulk of the card's
+                                      content. Some quick example text to build
+                                      on the card title and make up the bulk of
+                                      the card's content.
+                                    </p>
+                                  </div>
+                                  <div class="card-footer">
+                                    <a href="#" class="btn btn-primary"
+                                      >Save to collection</a
+                                    >
+                                    <a href="#" class="btn btn-primary"
+                                      >Share</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-selfies"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-selfies-tab"
+                    >
+                      ...
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-recent"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-recent-tab"
+                    >
+                      ...
+                    </div>
+                    <div
+                      class="tab-pane fade"
+                      id="v-pills-deleted"
+                      role="tabpanel"
+                      aria-labelledby="v-pills-deleted-tab"
+                    >
+                      ...
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="theme">
+        <svg
+          class="changeTheme"
+          data-theme="light"
+          width="40"
+          height="40"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          style="display: block"
+        >
+          <path
+            d="M20 30C22.6522 30 25.1957 28.9464 27.0711 27.0711C28.9464 25.1957 30 22.6522 30 20C30 17.3478 28.9464 14.8043 27.0711 12.9289C25.1957 11.0536 22.6522 10 20 10C17.3478 10 14.8043 11.0536 12.9289 12.9289C11.0536 14.8043 10 17.3478 10 20C10 22.6522 11.0536 25.1957 12.9289 27.0711C14.8043 28.9464 17.3478 30 20 30V30ZM20 0C20.3315 0 20.6495 0.131696 20.8839 0.366117C21.1183 0.600537 21.25 0.918479 21.25 1.25V6.25C21.25 6.58152 21.1183 6.89946 20.8839 7.13388C20.6495 7.3683 20.3315 7.5 20 7.5C19.6685 7.5 19.3505 7.3683 19.1161 7.13388C18.8817 6.89946 18.75 6.58152 18.75 6.25V1.25C18.75 0.918479 18.8817 0.600537 19.1161 0.366117C19.3505 0.131696 19.6685 0 20 0V0ZM20 32.5C20.3315 32.5 20.6495 32.6317 20.8839 32.8661C21.1183 33.1005 21.25 33.4185 21.25 33.75V38.75C21.25 39.0815 21.1183 39.3995 20.8839 39.6339C20.6495 39.8683 20.3315 40 20 40C19.6685 40 19.3505 39.8683 19.1161 39.6339C18.8817 39.3995 18.75 39.0815 18.75 38.75V33.75C18.75 33.4185 18.8817 33.1005 19.1161 32.8661C19.3505 32.6317 19.6685 32.5 20 32.5V32.5ZM40 20C40 20.3315 39.8683 20.6495 39.6339 20.8839C39.3995 21.1183 39.0815 21.25 38.75 21.25H33.75C33.4185 21.25 33.1005 21.1183 32.8661 20.8839C32.6317 20.6495 32.5 20.3315 32.5 20C32.5 19.6685 32.6317 19.3505 32.8661 19.1161C33.1005 18.8817 33.4185 18.75 33.75 18.75H38.75C39.0815 18.75 39.3995 18.8817 39.6339 19.1161C39.8683 19.3505 40 19.6685 40 20ZM7.5 20C7.5 20.3315 7.3683 20.6495 7.13388 20.8839C6.89946 21.1183 6.58152 21.25 6.25 21.25H1.25C0.918479 21.25 0.600537 21.1183 0.366117 20.8839C0.131696 20.6495 0 20.3315 0 20C0 19.6685 0.131696 19.3505 0.366117 19.1161C0.600537 18.8817 0.918479 18.75 1.25 18.75H6.25C6.58152 18.75 6.89946 18.8817 7.13388 19.1161C7.3683 19.3505 7.5 19.6685 7.5 20ZM34.1425 5.8575C34.3768 6.09191 34.5085 6.40979 34.5085 6.74125C34.5085 7.07271 34.3768 7.39059 34.1425 7.625L30.6075 11.1625C30.4913 11.2786 30.3533 11.3706 30.2016 11.4333C30.0498 11.4961 29.8871 11.5283 29.7229 11.5282C29.3912 11.528 29.0731 11.396 28.8387 11.1612C28.7227 11.045 28.6307 10.9071 28.5679 10.7553C28.5052 10.6035 28.4729 10.4409 28.4731 10.2766C28.4733 9.94491 28.6053 9.62689 28.84 9.3925L32.375 5.8575C32.6094 5.62316 32.9273 5.49152 33.2588 5.49152C33.5902 5.49152 33.9081 5.62316 34.1425 5.8575V5.8575ZM11.16 28.84C11.3943 29.0744 11.526 29.3923 11.526 29.7237C11.526 30.0552 11.3943 30.3731 11.16 30.6075L7.625 34.1425C7.38925 34.3702 7.07349 34.4962 6.74575 34.4933C6.418 34.4905 6.10449 34.359 5.87273 34.1273C5.64097 33.8955 5.50951 33.582 5.50666 33.2543C5.50381 32.9265 5.6298 32.6108 5.8575 32.375L9.3925 28.84C9.62691 28.6057 9.94479 28.474 10.2762 28.474C10.6077 28.474 10.9256 28.6057 11.16 28.84V28.84ZM34.1425 34.1425C33.9081 34.3768 33.5902 34.5085 33.2588 34.5085C32.9273 34.5085 32.6094 34.3768 32.375 34.1425L28.84 30.6075C28.6123 30.3717 28.4863 30.056 28.4892 29.7282C28.492 29.4005 28.6235 29.087 28.8552 28.8552C29.087 28.6235 29.4005 28.492 29.7282 28.4892C30.056 28.4863 30.3717 28.6123 30.6075 28.84L34.1425 32.375C34.3768 32.6094 34.5085 32.9273 34.5085 33.2588C34.5085 33.5902 34.3768 33.9081 34.1425 34.1425ZM11.16 11.1625C10.9256 11.3968 10.6077 11.5285 10.2762 11.5285C9.94479 11.5285 9.62691 11.3968 9.3925 11.1625L5.8575 7.625C5.73811 7.50969 5.64288 7.37176 5.57737 7.21926C5.51186 7.06675 5.47738 6.90273 5.47594 6.73675C5.47449 6.57078 5.50612 6.40618 5.56897 6.25256C5.63182 6.09894 5.72464 5.95937 5.84201 5.84201C5.95937 5.72464 6.09894 5.63182 6.25256 5.56897C6.40618 5.50612 6.57078 5.47449 6.73675 5.47594C6.90273 5.47738 7.06675 5.51186 7.21926 5.57737C7.37176 5.64288 7.50969 5.73811 7.625 5.8575L11.16 9.3925C11.2764 9.50861 11.3688 9.64655 11.4318 9.79842C11.4948 9.95028 11.5272 10.1131 11.5272 10.2775C11.5272 10.4419 11.4948 10.6047 11.4318 10.7566C11.3688 10.9084 11.2764 11.0464 11.16 11.1625V11.1625Z"
+            fill="#ed7135"
+          ></path>
+        </svg>
+        <svg
+          class="changeTheme"
+          data-theme="dark"
+          width="38"
+          height="40"
+          viewBox="0 0 38 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          style="display: block"
+        >
+          <path
+            d="M15 0.695136C15.244 0.991667 15.3935 1.35457 15.4292 1.73694C15.4648 2.11932 15.385 2.5036 15.2 2.84014C13.7546 5.49382 12.9998 8.46837 13.005 11.4901C13.005 21.5426 21.2 29.6826 31.3 29.6826C32.6175 29.6826 33.9 29.5451 35.1325 29.2826C35.5103 29.2008 35.9039 29.2321 36.264 29.3726C36.6241 29.5131 36.9349 29.7566 37.1575 30.0726C37.3925 30.4013 37.5123 30.7983 37.4983 31.2021C37.4842 31.6058 37.3372 31.9936 37.08 32.3051C35.1192 34.7137 32.6456 36.6544 29.8396 37.9856C27.0335 39.3168 23.9658 40.0051 20.86 40.0001C9.335 40.0001 0 30.7151 0 19.2751C0 10.6651 5.285 3.28014 12.81 0.150136C13.1848 -0.00828447 13.601 -0.0407995 13.9959 0.057475C14.3908 0.15575 14.7431 0.379507 15 0.695136V0.695136Z"
+            fill="#222222"
+          ></path>
+        </svg>
+      </div>
+    </main>
+    <svg style="display: none" xmlns="http://www.w3.org/2000/svg">
+      <symbol id="time" fill="#ffffff" viewBox="0 0 20 20">
+        <path
+          d="M10 6V10L12.5 12.5M19 10C19 14.9706 14.9706 19 10 19C5.02944 19 1 14.9706 1 10C1 5.02944 5.02944 1 10 1C14.9706 1 19 5.02944 19 10Z"
+          stroke="#666666"
+          stroke-width="2"
+          stroke-linecap="square"
+        />
+      </symbol>
+      <symbol id="icon1" viewBox="0 0 24 24">
+        <path
+          d="M17.5 12C17.5 15.0376 15.0376 17.5 12 17.5C8.96243 17.5 6.5 15.0376 6.5 12M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+          fill="white"
+          stroke-width="2"
+        />
+        <path
+          d="M11 9C11 9.82843 10.3284 10.5 9.5 10.5C8.67157 10.5 8 9.82843 8 9C8 8.17157 8.67157 7.5 9.5 7.5C10.3284 7.5 11 8.17157 11 9Z"
+        />
+        <path
+          d="M16 9C16 9.82843 15.3284 10.5 14.5 10.5C13.6716 10.5 13 9.82843 13 9C13 8.17157 13.6716 7.5 14.5 7.5C15.3284 7.5 16 8.17157 16 9Z"
+        />
+      </symbol>
+      <symbol id="icon2" viewBox="0 0 20 20">
+        <path
+          d="M4 19L3.00221 19.0665L3.06445 20H4V19ZM16 19V20H16.9356L16.9978 19.0665L16 19ZM1 3H0V5H1V3ZM19 5H20V3H19V5ZM9 9V8H7V9H9ZM7 14V15H9V14H7ZM13 9V8H11V9H13ZM11 14V15H13V14H11ZM2.00221 4.06652L3.00221 19.0665L4.99779 18.9335L3.99779 3.93348L2.00221 4.06652ZM4 20H16V18H4V20ZM16.9978 19.0665L17.9978 4.06652L16.0022 3.93348L15.0022 18.9335L16.9978 19.0665ZM17 3H3V5H17V3ZM1 5H3V3H1V5ZM17 5H19V3H17V5ZM7 9V14H9V9H7ZM11 9V14H13V9H11ZM10 2C11.3965 2 12.5725 2.95512 12.9055 4.24926L14.8424 3.75074C14.2874 1.59442 12.3312 0 10 0V2ZM7.09445 4.24926C7.42754 2.95512 8.60349 2 10 2V0C7.66883 0 5.71258 1.59442 5.15758 3.75074L7.09445 4.24926Z"
+        />
+      </symbol>
+      <symbol id="icon3" viewBox="0 0 20 20">
+        <path
+          d="M12 3.5C10.6193 3.5 9.5 4.61929 9.5 6C9.5 7.38071 10.6193 8.5 12 8.5C13.3807 8.5 14.5 7.38071 14.5 6C14.5 4.61929 13.3807 3.5 12 3.5Z"
+        />
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M0 0H18V18H15.5266L15.4945 18.0002H2.5L2.46787 18H0V0ZM16 9.83624C14.8552 10.898 13.7044 11.4537 12 11.4537C10.0944 11.4537 8.62078 10.2859 7.15266 8.70482C6.15108 7.62619 4.51491 7.43354 3.29018 8.25002L3.26758 8.26509L2 9.21342V2H16V9.83624Z"
+        />
+      </symbol>
+    </svg>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

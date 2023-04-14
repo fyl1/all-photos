@@ -1,0 +1,253 @@
+.nav-pills .nav-link.active {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  --bs-nav-pills-border-radius: rem-calc(8);
+  --bs-nav-pills-link-active-color: #fff;
+  --bs-nav-pills-link-active-bg: #ed7135;
+  border-radius: rem-calc(8);
+  color: #ffffff;
+}
+.switch-block .btn-secondary {
+  --bs-btn-color: #292929;
+  --bs-btn-bg: #fff;
+  --bs-btn-border-color: #6c757d;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #292929;
+  --bs-btn-hover-border-color: #565e64;
+  --bs-btn-focus-shadow-rgb: 130, 138, 145;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #292929;
+  --bs-btn-active-border-color: #51585e;
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: #fff;
+  --bs-btn-disabled-bg: #6c757d;
+  --bs-btn-disabled-border-color: #6c757d;
+}
+
+.nav-pills .nav-link.active .icon {
+  fill: white;
+  stroke: white;
+}
+.nav-pills .nav-link.active.stroke .icon {
+  stroke: #666666;
+}
+.page-block {
+  padding: rem-calc(40 0);
+}
+.nav-pills .nav-link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-weight: 700;
+  font-size: rem-calc(16);
+  line-height: 150%;
+
+  color: #666666;
+}
+.nav-pills .nav-link .icon {
+  margin-right: rem-calc(10);
+  fill: #666666;
+  stroke: #666666;
+}
+
+.main-title {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 700;
+  font-size: rem-calc(40);
+  line-height: 150%;
+  /* identical to box height, or 60px */
+
+  /* Dark */
+
+  color: #292929;
+}
+.subtitle {
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 700;
+  font-size: rem-calc(14);
+  line-height: 150%;
+  /* identical to box height, or 21px */
+
+  /* Secondary */
+
+  color: #666666;
+}
+.switch-block {
+  display: flex;
+}
+.switch-block label.btn.btn-secondary {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ebebeb;
+  border-radius: 8px 0px 0px 8px;
+  font-weight: 700;
+  padding: 7px 16px 6px 16px;
+}
+.switch-block label.btn.btn-secondary:first-child {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ebebeb;
+  border-radius: 8px 0px 0px 8px;
+}
+.switch-block label.btn.btn-secondary:last-child {
+  border-width: 2px;
+  border-style: solid;
+  border-color: #ebebeb;
+  border-radius: 0px 8px 8px 0px;
+}
+.card.card-main {
+    --bs-card-spacer-y: 1rem;
+    --bs-card-spacer-x: 1rem;
+    --bs-card-title-spacer-y: 0.5rem;
+    --bs-card-title-color: ;
+    --bs-card-subtitle-color: ;
+    --bs-card-border-width: var(--bs-border-width);
+    --bs-card-border-color: var(--bs-border-color-translucent);
+    --bs-card-border-radius: var(--bs-border-radius);
+    --bs-card-box-shadow: ;
+    --bs-card-inner-border-radius: calc(var(--bs-border-radius) - (var(--bs-border-width)));
+    --bs-card-cap-padding-y: 0.5rem;
+    --bs-card-cap-padding-x: 1rem;
+    --bs-card-cap-bg: #ffffff;
+    --bs-card-cap-color: ;
+    --bs-card-height: ;
+    --bs-card-color: ;
+    --bs-card-bg: var(--bs-body-bg);
+    --bs-card-img-overlay-padding: 1rem;
+    --bs-card-group-margin: 0.75rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    height: var(--bs-card-height);
+    word-wrap: break-word;
+    background-color: var(--bs-card-bg);
+    background-clip: border-box;
+    border: var(--bs-card-border-width) solid var(--bs-card-border-color);
+    border-radius: var(--bs-card-border-radius);
+  }
+
+.card-main.card {
+  .card-img-top {
+  }
+  .card-body {
+    min-height: rem-calc(230);
+  }
+  .card-title {
+    font-family: "Commissioner";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    /* identical to box height, or 36px */
+
+    /* Dark */
+
+    color: #292929;
+  }
+  .card-text {
+    font-family: "Commissioner";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    max-height: rem-calc(45);
+    overflow: hidden;
+    transition: max-height 0.9s;
+    /* or 24px */
+
+    /* Secondary */
+
+    // color: #666666;
+    // -webkit-line-clamp: 2; 
+    // display: -webkit-box;
+    // -webkit-box-orient: vertical;
+    // overflow: hidden; 
+  }
+  .card-footer{
+    position: relative;
+    padding-left: 0;
+    border: none;
+    padding: rem-calc(16 16 0 0);
+    &::after{
+        content: "";
+        position: absolute;
+        left: -15px;
+        top: 0;
+        width: calc(100% + 30px);
+        height: 1px;
+        background-color: #EBEBEB;
+    }
+  }
+}
+.btn-primary.btn {
+  background: #ed7135;
+  border-radius: rem-calc(8);
+  font-family: "Commissioner";
+  font-style: normal;
+  font-weight: 700;
+  font-size: rem-calc(16);
+  line-height: 150%;
+  /* identical to box height, or 24px */
+
+  /* White */
+
+  color: #ffffff;
+  border: none;
+  transition: 0.5s;
+  border: 2px solid transparent;
+}
+.btn-primary.btn:hover,
+.btn-primary.btn:active,
+.btn-primary.btn:focus {
+  transition: 0.5s;
+  background: #ffffff;
+  color: #292929;
+  border: 2px solid #ebebeb;
+}
+.theme {
+    position: fixed;
+    cursor: pointer;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    padding: 10px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(39,38,40,0.4);
+}
+.card-accardeon{
+    min-height: rem-calc(101);
+    // max-height: rem-calc(101);
+    transition: 0.6s;
+    .btn.btn-link.show-more{
+        position: absolute;
+       transform: translate(-500px);
+    }
+}
+.card-accardeon.active{
+    min-height: auto;
+    max-height: 100%;
+    transition: 0.6s;
+     .card-text{
+        display:block
+    }
+    .btn.btn-link.show-more{
+        position: relative;
+        transform: translate(0px);
+    }
+}
+
+@media (min-width: 1400px) {
+  .container.container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1160px;
+  }
+}
